@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet href="styles.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mick Bosman">
+    <title>Quiz</title>
+  </head>
+  <body>
+    <img src="img/quiz.png" alt="quiz"  class="quiz"
+    width="400" height="250" style=" position:absolute; left:38%; top:10%;">
+
+    <ul>
+        <li onclick="warn()">Welkom</li>
+        <li class="active" onclick="warnWelkom()">Quiz</li>
+     </ul>
+
+    <div id="overlay">
+      <div id="done">
+        <img src="" id="images">
+      </div>
+      <div id="overlayText">
+      </div>
+    </div>
+
+          <div class="vraag">
+           <h1 id="vraag"></h1>
+         </div>
+
+     <div class="spin">
+     <img src="img/check.png" alt="ja"  id="ja"
+     width="200" height="150" style=" position:absolute; left:30%; top: 60%;">
+   </div>
+
+    <div class="spin_2">
+     <img src="img/fout.png" alt="nee"  id="nee"
+      width="200" height="150" style=" position:absolute; left:50%; top:60%;">
+    </div>
+
+      <script src="quiz.js"></script>
+  </body>
+</html>
